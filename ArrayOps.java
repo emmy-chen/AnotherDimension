@@ -99,7 +99,18 @@ public class ArrayOps {
     return true;
   }
 
-//  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
-
-  //}
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int sumrow = 0;
+    int sumcol = 0;
+    for (int i = 0; i < matrix[row].length; i++) {
+      sumrow += matrix[row][i];
+    }
+    for (int i = 0; i < matrix.length; i++) {
+      sumcol += matrix[i][col];
+    }
+    if (sumrow != sumcol) {
+      return false;
+    }
+    return true;
+  }
 }
