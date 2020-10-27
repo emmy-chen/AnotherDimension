@@ -30,9 +30,19 @@ public class ArrayOps {
   return a;
   }
 
-//  public static  int[] largestInRows(int[][] matrix) {
-
-  //}
+  public static  int[] largestInRows(int[][] matrix) {
+    int a[] = new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 1; j < matrix[i].length; j++) {
+        int max = matrix[i][0];
+        if (matrix[i][j] > max) {
+          max = matrix[i][j];
+        }
+        a[i] = max;
+      }
+    }
+    return a;
+  }
 
 //  public static  int sum(int[][] arr) {
 
