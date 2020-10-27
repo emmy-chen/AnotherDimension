@@ -9,9 +9,15 @@ public class ArrayOps {
     }
     return summ;
   }
-//  public static  int largest(int[]arr) {
-
-  //}
+  public static  int largest(int[]arr) {
+    int max = arr[0];
+    for (int i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+    }
+    return max;
+  }
 
 //  public static int[] sumRows(int[][] matrix) {
 
