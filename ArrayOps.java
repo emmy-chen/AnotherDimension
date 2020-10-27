@@ -19,9 +19,16 @@ public class ArrayOps {
     return max;
   }
 
-//  public static int[] sumRows(int[][] matrix) {
-
-  //}
+  public static int[] sumRows(int[][] matrix) {
+    int a[] = new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++) {
+      int tot = 0;
+      for (int j = 0; j < matrix[i].length; j++) {
+        tot += matrix[i][j];
+      }
+    }
+  return a;
+  }
 
 //  public static  int[] largestInRows(int[][] matrix) {
 
